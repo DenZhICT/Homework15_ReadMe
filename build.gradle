@@ -23,11 +23,6 @@ allure {
 repositories {
     mavenCentral()
 }
-/*java {
-    toolchain{
-        languageVersion = JavaLanguageVersion.of(17)
-    }
-}*/
 
 dependencies {
     //JUnit 5
@@ -52,10 +47,21 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
+tasks.register('All',Test).configure(){
+    useJUnitPlatform{
+        includeTags 'All'
+    }
+}
+
+tasks.register('UITest',Test).configure(){
+    useJUnitPlatform{
+        includeTags 'UITest'
+    }
+}
 
 tasks.withType(Test) {
     systemProperties(System.getProperties())
-    useJUnitPlatform()
+    //useJUnitPlatform()
 
     testLogging {
         lifecycle {

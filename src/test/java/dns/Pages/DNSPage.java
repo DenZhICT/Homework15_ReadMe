@@ -23,7 +23,7 @@ public class DNSPage {
             amountOfWishList = ".profile-wishlist__sum",
             emptyCart = ".empty-message__title-empty-cart",
             emptyWishList = ".profile-wishlist__empty-text",
-            help = "[href='/help/']",
+            help = ".navmenu__submenu-link",
             helpHead = ".help__head",
             animation = ".animation_active",
             waitForRedirect = "[data-redirect='https://www.dns-shop.ru/cart/']";
@@ -126,7 +126,7 @@ public class DNSPage {
 
     public DNSPage clickHelp() {
         step("Нажать на \"Помощь\"", () ->
-                $(help).click());
+                $$(help).findBy(text("Помощь")).click());
         return this;
     }
 

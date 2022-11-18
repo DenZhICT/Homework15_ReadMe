@@ -10,7 +10,7 @@ public class DNSTests extends TestBase {
 
     DNSPage page = new DNSPage();
 
-    @Tag("UITest")
+    @Tag("UITest") @Tag("All")
     @DisplayName("Смена города")
     @Test
     void cityChangeTest() {
@@ -23,7 +23,7 @@ public class DNSTests extends TestBase {
                 .checkCity(city);
     }
 
-    @Tag("UITest")
+    @Tag("UITest") @Tag("All")
     @DisplayName("Работоспособности поиска")
     @Test
     void searchSystemTest() {
@@ -36,7 +36,7 @@ public class DNSTests extends TestBase {
                 .checkTitle(tech);
     }
 
-    @Tag("UITest")
+    @Tag("UITest") @Tag("All")
     @DisplayName("Работоспособность католога")
     @Test
     void catalogTest() {
@@ -52,7 +52,7 @@ public class DNSTests extends TestBase {
                 .checkTitle(subCatalogChapter);
     }
 
-    @Tag("UITest")
+    @Tag("UITest") @Tag("All")
     @DisplayName("Добавление техники в корзину")
     @Test
     void addTechInCartTest() {
@@ -66,7 +66,7 @@ public class DNSTests extends TestBase {
                 .checkAmountOfProductInCart();
     }
 
-    @Tag("UITest")
+    @Tag("UITest") @Tag("All")
     @DisplayName("Добавление техники в список желаемого")
     @Test
     void addTechInWishListTest() {
@@ -80,7 +80,7 @@ public class DNSTests extends TestBase {
                 .checkAmountOfProductInWishList();
     }
 
-    @Tag("UITest")
+    @Tag("UITest") @Tag("All")
     @DisplayName("Удаление техники из корзины")
     @Test
     void delTechFromCartTest() {
@@ -96,7 +96,7 @@ public class DNSTests extends TestBase {
                 .checkCartIsEmpty();
     }
 
-    @Tag("UITest")
+    @Tag("UITest") @Tag("All")
     @DisplayName("Удаление техники из списока желаемого")
     @Test
     void delTechFromWishListTest() {
@@ -112,7 +112,7 @@ public class DNSTests extends TestBase {
                 .checkWishListIsEmpty();
     }
 
-    @Tag("UITest")
+    @Tag("UITest") @Tag("All")
     @DisplayName("Работоспособность помощи")
     @Test
     void helpTest() {
