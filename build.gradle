@@ -47,13 +47,13 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-tasks.register('All',Test).configure(){
+task All(type: Test) {
     useJUnitPlatform{
         includeTags 'All'
     }
 }
 
-tasks.register('UITest',Test).configure(){
+task UITest(type: Test) {
     useJUnitPlatform{
         includeTags 'UITest'
     }
