@@ -24,7 +24,7 @@
 <a href="https://www.jenkins.io/"><img src="images/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
-## :memo: Реализованные-проверки
+## :memo: Реализованные проверки
 
 - :white_check_mark: Проверка смены города.
 - :white_check_mark: Проверка поисковой системы.
