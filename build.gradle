@@ -59,6 +59,47 @@ task UITest(type: Test) {
     }
 }
 
+task City(type: Test) {
+    useJUnitPlatform{
+        includeTags 'City'
+    }
+}
+task Search(type: Test) {
+    useJUnitPlatform{
+        includeTags 'Search'
+    }
+}
+task Catalog(type: Test) {
+    useJUnitPlatform{
+        includeTags 'Catolog'
+    }
+}
+task Add(type: Test) {
+    useJUnitPlatform{
+        includeTags 'Add'
+    }
+}
+task Delete(type: Test) {
+    useJUnitPlatform{
+        includeTags 'Delete'
+    }
+}
+task Cart(type: Test) {
+    useJUnitPlatform{
+        includeTags 'Cart'
+    }
+}
+task WishList(type: Test) {
+    useJUnitPlatform{
+        includeTags 'WishList'
+    }
+}
+task Help(type: Test) {
+    useJUnitPlatform{
+        includeTags 'Help'
+    }
+}
+
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     //useJUnitPlatform()

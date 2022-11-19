@@ -6,11 +6,12 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+@Tag("UITest") @Tag("All")
 public class DNSTests extends TestBase {
 
     DNSPage page = new DNSPage();
 
-    @Tag("UITest") @Tag("All")
+    @Tag("City")
     @DisplayName("Смена города")
     @Test
     void cityChangeTest() {
@@ -23,7 +24,7 @@ public class DNSTests extends TestBase {
                 .checkCity(city);
     }
 
-    @Tag("UITest") @Tag("All")
+    @Tag("Search")
     @DisplayName("Работоспособности поиска")
     @Test
     void searchSystemTest() {
@@ -36,7 +37,7 @@ public class DNSTests extends TestBase {
                 .checkTitle(tech);
     }
 
-    @Tag("UITest") @Tag("All")
+    @Tag("Catalog")
     @DisplayName("Работоспособность католога")
     @Test
     void catalogTest() {
@@ -52,7 +53,7 @@ public class DNSTests extends TestBase {
                 .checkTitle(subCatalogChapter);
     }
 
-    @Tag("UITest") @Tag("All")
+    @Tag("Add") @Tag("Cart")
     @DisplayName("Добавление техники в корзину")
     @Test
     void addTechInCartTest() {
@@ -66,7 +67,7 @@ public class DNSTests extends TestBase {
                 .checkAmountOfProductInCart();
     }
 
-    @Tag("UITest") @Tag("All")
+    @Tag("Add") @Tag("WishList")
     @DisplayName("Добавление техники в список желаемого")
     @Test
     void addTechInWishListTest() {
@@ -80,7 +81,7 @@ public class DNSTests extends TestBase {
                 .checkAmountOfProductInWishList();
     }
 
-    @Tag("UITest") @Tag("All")
+    @Tag("Delete") @Tag("Cart")
     @DisplayName("Удаление техники из корзины")
     @Test
     void delTechFromCartTest() {
@@ -96,7 +97,7 @@ public class DNSTests extends TestBase {
                 .checkCartIsEmpty();
     }
 
-    @Tag("UITest") @Tag("All")
+    @Tag("Delete") @Tag("WishList")
     @DisplayName("Удаление техники из списока желаемого")
     @Test
     void delTechFromWishListTest() {
@@ -112,7 +113,7 @@ public class DNSTests extends TestBase {
                 .checkWishListIsEmpty();
     }
 
-    @Tag("UITest") @Tag("All")
+    @Tag("Help")
     @DisplayName("Работоспособность помощи")
     @Test
     void helpTest() {
