@@ -76,7 +76,7 @@ ${TEST_TYPE}
 <img title="Allure Overview Dashboard" src="images/allure_telegram.png">
 </p>
 
-### :film_strip: Примеры видео о прохождении тестов
+### :film_strip: Пример видео о прохождении тестов
 
 <p align="center">
 <img title="Selenoid Video" src="images/video1.gif" width="250" height="153"  alt="video">
