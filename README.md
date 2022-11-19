@@ -1,4 +1,4 @@
-# <img src="images/DNS.png" alt="DNS" width="35" height="30"/>Проект по автоматизации тестирования DNS<img src="images/DNS.png" alt="DNS" width="35" height="30"/>
+# <img src="images/DNS.png" alt="DNS" width="35" height="30"/>Проект по автоматизации тестирования DNS
 
 ## :scroll: Содержание:
 
