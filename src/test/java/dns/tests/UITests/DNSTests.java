@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 @Tag("UITest") @Tag("All")
+@DisplayName("UI тесты на сайт DNS")
 public class DNSTests extends TestBase {
 
     DNSPage page = new DNSPage();
